@@ -1,15 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Project 1.2</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Website</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
- <h1>First project</h1>
- <a href="./test/dashb.html ">Go to dashboard</a>
- <a href="/login.html" target="_blank" >Login</a>
- <a href="/about.html " >About us</a>
+
+  <section>
+    <nav>
+      <img src="./assets/FES.svg" class="logo" alt="">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#discord">Discord</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="row">
+      <div>
+        <h1>Best place to learn front-end</h1>
+        <p class="sub-header">Go from being an absolute beginner to pro with a simplified process.</p>
+        <button>Start now</button>
+      </div>
+      <figure>
+        <img src="./assets/laptop.png" alt="Homepage image">
+      </figure>
+      </div>
+    </header>
+  </section>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <div class="section__desc">
+        <div class="section__desc_wrapper">
+        <p class="section__desc_text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem asperiores consectetur molestias corrupti, qui labore accusamus consequuntur neque? Quibusdam, expedita. Neque sit ea, cumque eum commodi aliquam dignissimos repellat non.
+        </p>
+        <p class="section__desc_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam amet numquam vel ut? Velit, nesciunt eaque illum perspiciatis aliquam ad!</p>
+      </div>
+      <figure class="about__img--wrapper">
+        <img src="./assets/about.jpg" alt="">
+      </figure>
+    </div>
+    </section>
+
+    <section id="discord" >
+      <h2>Discord</h2>
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, numquam? Tempore itaque odio quo ducimus hic quae libero ipsam, a doloribus suscipit, autem rem quod, officiis cumque commodi voluptatibus odit.</p>
+      </div>
+      <figure>
+        <img src="./assets/discord.png" alt="">
+      </figure>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+       <form action="">
+        <span>Email</span>
+        <input type="text" name="user@example.com" id="">
+        <span>Message</span>
+        <textarea type="text" placeholder="user@example.com"></textarea>
+        <button>Submit</button>
+       </form>
+    </section>
+  </main>
+  <footer>
+    <img src="./assets/FES.svg" alt="">
+    <div>
+      <a href="#about">About</a>
+      <a href="#discord">Discord</a>
+      <a href="#contact">Contact</a>
+      <a href="">Courses</a>
+    </div>
+    <p>Copyright Frontend Simplified</p>
+  </footer>
 </body>
 </html>
