@@ -21,10 +21,10 @@
     </nav>
     <header>
       <div class="row">
-      <div>
+      <div class="home_desc">
         <h1>Best place to learn front-end</h1>
         <p class="sub-header">Go from being an absolute beginner to pro with a simplified process.</p>
-        <button>Start now</button>
+        <button class="home_desc--button">Start now</button>
       </div>
       <figure>
         <img src="./assets/laptop.png" alt="Homepage image">
@@ -36,6 +36,7 @@
   <main>
     <section id="about">
       <h2>About</h2>
+      <div class="row">
       <div class="section__desc">
         <div class="section__desc_wrapper">
         <p class="section__desc_text">
@@ -47,37 +48,43 @@
         <img src="./assets/about.jpg" alt="">
       </figure>
     </div>
+    </div>
     </section>
 
     <section id="discord" >
       <h2>Discord</h2>
-      <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, numquam? Tempore itaque odio quo ducimus hic quae libero ipsam, a doloribus suscipit, autem rem quod, officiis cumque commodi voluptatibus odit.</p>
-      </div>
-      <figure>
+      <div class="row">
+      <div class="section__desc">
+      <figure class="disc_img--wrapper">
         <img src="./assets/discord.png" alt="">
       </figure>
+      <div class="section__desc_wrapper">
+        <p class="section__desc_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, numquam? Tempore itaque odio quo ducimus hic quae libero ipsam, a doloribus suscipit, autem rem quod, officiis cumque commodi voluptatibus odit.</p>
+        <p class="section__desc_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur distinctio rerum voluptates cumque voluptas dolore velit magnam perspiciatis, illum maxime?</p>
+        </div>
+       </div>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
        <form action="">
         <span>Email</span>
-        <input type="text" name="user@example.com" id="">
+        <input type="text" name="user@example.com" id="" required>
         <span>Message</span>
         <textarea type="text" placeholder="user@example.com"></textarea>
-        <button>Submit</button>
+        <button>Contact Us</button>
        </form>
     </section>
   </main>
   <footer>
-    <img src="./assets/FES.svg" alt="">
-    <div>
-      <a href="#about">About</a>
-      <a href="#discord">Discord</a>
-      <a href="#contact">Contact</a>
-      <a href="">Courses</a>
-    </div>
+    <img class="footer__logo" src="./assets/FES.svg" alt="">
+    <div class="footer__links">
+      <a class="footer__link" href="#about">About</a>
+      <a class="footer__link" href="#discord">Discord</a>
+      <a class="footer__link" href="#contact">Contact</a>
+      <a class="footer__link" href="">Courses</a>
+    </div>  
     <p>Copyright Frontend Simplified</p>
   </footer>
 </body>
